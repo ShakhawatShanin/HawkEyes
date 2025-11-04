@@ -231,14 +231,15 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
-# conda activate office && python -c "$(curl -s https://raw.githubusercontent.com/ShakhawatShanin/HawkEyes/refs/heads/main/tool.py)" \
-# None \
-# "/home/shanin/Desktop/UNILEVER_Master/AI_Models/ublDA_v8.1.pt" \
-# "/home/shanin/Downloads/November CSD/TRESEMME RRO COND KERATN SMOOTH LC 190ML" \
-# "['tresemme_ks_white','tresemme_ks_black']" \
-# False \
-# 100
-
+"""
+conda activate office && python -c "$(curl -s https://raw.githubusercontent.com/ShakhawatShanin/HawkEyes/refs/heads/main/tool.py)" \
+None \
+"/home/shanin/Desktop/UNILEVER_Master/AI_Models/ublDA_v8.1.pt" \
+"/home/shanin/Downloads/November CSD/TRESEMME RRO COND KERATN SMOOTH LC 190ML" \
+"['tresemme_ks_white','tresemme_ks_black']" \
+False \
+100
+"""
 # crop_model_path → None or [path]
 # detect_model_path → None or [path]
 # root_folder_path → None or [path]
