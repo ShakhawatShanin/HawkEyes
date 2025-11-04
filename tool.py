@@ -246,3 +246,19 @@ False \
 # desired_class_names → None or ["class1","class2"]
 # show_full_annotation → True / False
 # initial_padding → numeric value
+
+"""
+conda activate office && \
+python -c "
+import cv2, os, sys; 
+img = cv2.imread(sys.argv[1]); 
+p = int(sys.argv[2]); 
+cv2.imwrite(
+    os.path.join(sys.argv[3], 'padded_' + os.path.basename(sys.argv[1])),
+    cv2.copyMakeBorder(img, p, p, p, p, cv2.BORDER_CONSTANT, value=[0,0,0])
+)
+" \
+"/home/shanin/Downloads/November CSD/TRESEMME RRO COND KERATN SMOOTH LC 190ML/a.jpg" \
+100 \
+"/home/shanin/Desktop"
+"""
