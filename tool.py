@@ -231,34 +231,3 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
-"""
-conda activate office && python -c "$(curl -s https://raw.githubusercontent.com/ShakhawatShanin/HawkEyes/refs/heads/main/tool.py)" \
-None \
-"/home/shanin/Desktop/UNILEVER_Master/AI_Models/ublDA_v8.1.pt" \
-"/home/shanin/Downloads/November CSD/TRESEMME RRO COND KERATN SMOOTH LC 190ML" \
-"['tresemme_ks_white','tresemme_ks_black']" \
-False \
-100
-"""
-# crop_model_path → None or [path]
-# detect_model_path → None or [path]
-# root_folder_path → None or [path]
-# desired_class_names → None or ["class1","class2"]
-# show_full_annotation → True / False
-# initial_padding → numeric value
-
-"""
-conda activate office && \
-python -c "
-import cv2, os, sys; 
-img = cv2.imread(sys.argv[1]); 
-p = int(sys.argv[2]); 
-cv2.imwrite(
-    os.path.join(sys.argv[3], 'padded_' + os.path.basename(sys.argv[1])),
-    cv2.copyMakeBorder(img, p, p, p, p, cv2.BORDER_CONSTANT, value=[0,0,0])
-)
-" \
-"/home/shanin/Downloads/November CSD/TRESEMME RRO COND KERATN SMOOTH LC 190ML/a.jpg" \
-100 \
-"/home/shanin/Desktop"
-"""
